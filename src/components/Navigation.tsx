@@ -6,12 +6,13 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Ryze Platform", href: "#ryze" },
-    { name: "Internships", href: "#internships" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Ryze Platform", href: "/#ryze" },
+    { name: "Founding Team", href: "/founders" },
+    { name: "Internships", href: "/#internships" },
+    { name: "Apply Now", href: "/apply" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (

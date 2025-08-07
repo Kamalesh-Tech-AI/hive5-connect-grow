@@ -198,9 +198,11 @@ const InternshipSection = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Button size="lg" className="text-lg px-8 py-6 btn-hover-lift">
-            Apply for Internship Program
-            <GraduationCap className="ml-2 w-5 h-5" />
+          <Button size="lg" className="text-lg px-8 py-6 btn-hover-lift" asChild>
+            <a href="/apply">
+              Apply for Internship Program
+              <GraduationCap className="ml-2 w-5 h-5" />
+            </a>
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
             Applications are reviewed on a rolling basis. Start your application today!
