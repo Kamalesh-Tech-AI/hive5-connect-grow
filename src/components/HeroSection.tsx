@@ -49,18 +49,24 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="text-lg px-8 py-6 btn-hover-lift"
+              asChild
             >
-              Explore Ryze Platform 
-              <ExternalLink className="ml-2 w-5 h-5" />
+              <a href="/partnership-program">
+                Explore Ryze Platform 
+                <ExternalLink className="ml-2 w-5 h-5" />
+              </a>
             </Button>
             
             <Button 
               variant="outline" 
               size="lg" 
               className="text-lg px-8 py-6 btn-hover-lift"
+              asChild
             >
-              Join Internship Program 
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <a href="/apply">
+                Join Internship Program 
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
           </div>
 

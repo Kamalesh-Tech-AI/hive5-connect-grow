@@ -130,11 +130,15 @@ const ServicesSection = () => {
               HIVE5 has the perfect solution for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-hover-lift">
-                Explore Ryze Platform <ExternalLink className="ml-2 w-5 h-5" />
+              <Button size="lg" className="btn-hover-lift" asChild>
+                <a href="/partnership-program">
+                  Explore Ryze Platform <ExternalLink className="ml-2 w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="btn-hover-lift">
-                View Internships <GraduationCap className="ml-2 w-5 h-5" />
+              <Button variant="outline" size="lg" className="btn-hover-lift" asChild>
+                <a href="/#internships">
+                  View Internships <GraduationCap className="ml-2 w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>

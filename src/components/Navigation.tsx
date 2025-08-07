@@ -38,8 +38,10 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="default" className="btn-hover-lift">
-              Visit Ryze <ExternalLink className="ml-2 w-4 h-4" />
+            <Button variant="default" className="btn-hover-lift" asChild>
+              <a href="/partnership-program">
+                Visit Ryze <ExternalLink className="ml-2 w-4 h-4" />
+              </a>
             </Button>
           </div>
 
@@ -69,8 +71,10 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" className="mt-4 w-full">
-                Visit Ryze <ExternalLink className="ml-2 w-4 h-4" />
+              <Button variant="default" className="mt-4 w-full" asChild>
+                <a href="/partnership-program">
+                  Visit Ryze <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
               </Button>
             </div>
           </div>

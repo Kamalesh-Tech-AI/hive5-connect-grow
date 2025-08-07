@@ -13,21 +13,21 @@ import {
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Ryze Platform", href: "#ryze" },
-    { name: "Internships", href: "#internships" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" }
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Ryze Platform", href: "/partnership-program" },
+    { name: "Internships", href: "/#internships" },
+    { name: "Founding Team", href: "/founders" },
+    { name: "Contact", href: "/#contact" }
   ];
 
   const services = [
-    { name: "Website Marketplace", href: "#" },
-    { name: "Portfolio Showcase", href: "#" },
-    { name: "PhD Research Network", href: "#" },
-    { name: "Partnership Program", href: "#" },
-    { name: "Editing Training", href: "#" },
-    { name: "Technical Internships", href: "#" }
+    { name: "Website Marketplace", href: "/partnership-program" },
+    { name: "Portfolio Showcase", href: "/partnership-program" },
+    { name: "PhD Research Network", href: "/partnership-program" },
+    { name: "Partnership Program", href: "/partnership-program" },
+    { name: "Editing Training", href: "/editing-training" },
+    { name: "Technical Internships", href: "/apply" }
   ];
 
   const socialLinks = [
@@ -113,7 +113,7 @@ const Footer = () => {
                 className="w-full btn-hover-lift"
                 asChild
               >
-                <a href="#ryze">
+                <a href="/partnership-program">
                   Visit Ryze Platform
                   <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
@@ -123,7 +123,7 @@ const Footer = () => {
                 className="w-full btn-hover-lift border-background/20 text-background hover:bg-background hover:text-foreground"
                 asChild
               >
-                <a href="#internships">Apply for Internship</a>
+                <a href="/apply">Apply for Internship</a>
               </Button>
             </div>
 
@@ -156,13 +156,13 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center space-x-6 text-sm">
-            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+            <a href="/privacy-policy" className="text-background/60 hover:text-primary transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+            <a href="/terms-of-service" className="text-background/60 hover:text-primary transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+            <a href="/cookie-policy" className="text-background/60 hover:text-primary transition-colors">
               Cookie Policy
             </a>
           </div>
