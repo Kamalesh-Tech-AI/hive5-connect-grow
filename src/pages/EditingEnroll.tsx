@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
+import { PaymentMethodSelector } from "@/components/ui/payment-methods";
 import { ArrowLeft, Edit3, Shield, CreditCard, Phone, Mail, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -265,17 +266,12 @@ const EditingEnroll = () => {
                         
                         <div>
                           <Label htmlFor="paymentMethod">Preferred Payment Method</Label>
-                          <Select value={formData.paymentMethod} onValueChange={(value) => handleInputChange('paymentMethod', value)}>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select payment method" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="credit-card">Credit Card</SelectItem>
-                              <SelectItem value="bank-transfer">Bank Transfer</SelectItem>
-                              <SelectItem value="paypal">PayPal</SelectItem>
-                              <SelectItem value="payment-plan">Payment Plan (3 installments)</SelectItem>
-                            </SelectContent>
-                          </Select>
+                          <div className="mt-2">
+                            <PaymentMethodSelector
+                              value={formData.paymentMethod}
+                              onValueChange={(value) => handleInputChange('paymentMethod', value)}
+                            />
+                          </div>
                         </div>
                         
                         <div>
