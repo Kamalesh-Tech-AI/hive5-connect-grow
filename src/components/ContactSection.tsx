@@ -16,8 +16,21 @@ import {
   Users,
   Briefcase
 } from "lucide-react";
+import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
   const contactInfo = [
     {
       icon: Mail,
@@ -57,6 +70,53 @@ const ContactSection = () => {
     { icon: Briefcase, title: "Business Opportunities", description: "Explore business partnerships" },
     { icon: MessageSquare, title: "General Support", description: "Questions and assistance" }
   ];
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert({
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: "Failed to Send Message",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-secondary/30">
@@ -100,41 +160,76 @@ const ContactSection = () => {
                   Fill out the form below and we'll get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="Enter your first name" />
+                    <Input 
+                      id="firstName" 
+                      required
+                      value={formData.firstName}
+                      onChange={(e) => handleInputChange('firstName', e.target.value)}
+                      placeholder="Enter your first name" 
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Enter your last name" />
+                    <Input 
+                      id="lastName" 
+                      required
+                      value={formData.lastName}
+                      onChange={(e) => handleInputChange('lastName', e.target.value)}
+                      placeholder="Enter your last name" 
+                    />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="Enter your email address" />
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    required
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    placeholder="Enter your email address" 
+                  />
                 </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="What's this about?" />
+                  <Input 
+                    id="subject" 
+                    required
+                    value={formData.subject}
+                    onChange={(e) => handleInputChange('subject', e.target.value)}
+                    placeholder="What's this about?" 
+                  />
                 </div>
                 
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
                   <Textarea 
                     id="message" 
+                    required
+                    value={formData.message}
+                    onChange={(e) => handleInputChange('message', e.target.value)}
                     rows={6} 
                     placeholder="Tell us more about your inquiry..."
                   />
                 </div>
                 
-                <Button className="w-full btn-hover-lift" size="lg">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  className="w-full btn-hover-lift" 
+                  size="lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
                   <Send className="ml-2 w-4 h-4" />
                 </Button>
+                </form>
               </CardContent>
             </Card>
 
