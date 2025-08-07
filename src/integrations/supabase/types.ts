@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      internship_applications: {
+        Row: {
+          available_duration: string | null
+          cover_letter: string | null
+          created_at: string
+          email: string
+          full_name: string
+          github_url: string | null
+          id: string
+          linkedin_url: string | null
+          major: string | null
+          phone: string | null
+          portfolio_url: string | null
+          preferred_start_date: string | null
+          skills: string[] | null
+          status: string | null
+          university: string | null
+          updated_at: string
+          year_of_study: string | null
+        }
+        Insert: {
+          available_duration?: string | null
+          cover_letter?: string | null
+          created_at?: string
+          email: string
+          full_name: string
+          github_url?: string | null
+          id?: string
+          linkedin_url?: string | null
+          major?: string | null
+          phone?: string | null
+          portfolio_url?: string | null
+          preferred_start_date?: string | null
+          skills?: string[] | null
+          status?: string | null
+          university?: string | null
+          updated_at?: string
+          year_of_study?: string | null
+        }
+        Update: {
+          available_duration?: string | null
+          cover_letter?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string
+          github_url?: string | null
+          id?: string
+          linkedin_url?: string | null
+          major?: string | null
+          phone?: string | null
+          portfolio_url?: string | null
+          preferred_start_date?: string | null
+          skills?: string[] | null
+          status?: string | null
+          university?: string | null
+          updated_at?: string
+          year_of_study?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
