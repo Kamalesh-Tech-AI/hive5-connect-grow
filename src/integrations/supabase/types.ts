@@ -14,6 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
+      editing_enrollments: {
+        Row: {
+          amount: number
+          contact_preference: string | null
+          created_at: string
+          current_skills: string[] | null
+          email: string
+          experience_level: string
+          full_name: string
+          goals: string | null
+          id: string
+          payment_method: string | null
+          phone: string | null
+          preferred_schedule: string | null
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          amount?: number
+          contact_preference?: string | null
+          created_at?: string
+          current_skills?: string[] | null
+          email: string
+          experience_level: string
+          full_name: string
+          goals?: string | null
+          id?: string
+          payment_method?: string | null
+          phone?: string | null
+          preferred_schedule?: string | null
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          amount?: number
+          contact_preference?: string | null
+          created_at?: string
+          current_skills?: string[] | null
+          email?: string
+          experience_level?: string
+          full_name?: string
+          goals?: string | null
+          id?: string
+          payment_method?: string | null
+          phone?: string | null
+          preferred_schedule?: string | null
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       internship_applications: {
         Row: {
           available_duration: string | null

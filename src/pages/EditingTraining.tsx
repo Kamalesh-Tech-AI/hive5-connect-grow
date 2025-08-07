@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Edit3, Clock, Users, Award, CheckCircle, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const EditingTraining = () => {
   const features = [
@@ -77,11 +78,15 @@ const EditingTraining = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-hover-lift">
-                Enroll Now - $299
+              <Button size="lg" className="btn-hover-lift" asChild>
+                <Link to="/editing-enroll">
+                  Enroll Now - $299
+                </Link>
               </Button>
-              <Button variant="outline" size="lg" className="btn-hover-lift">
-                View Curriculum
+              <Button variant="outline" size="lg" className="btn-hover-lift" asChild>
+                <Link to="/editing-curriculum">
+                  View Curriculum
+                </Link>
               </Button>
             </div>
           </div>
@@ -190,8 +195,10 @@ const EditingTraining = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Join our comprehensive training program and master professional editing skills
             </p>
-            <Button size="lg" className="btn-hover-lift">
-              Enroll Today - $299
+            <Button size="lg" className="btn-hover-lift" asChild>
+              <Link to="/editing-enroll">
+                Enroll Today - $299
+              </Link>
             </Button>
           </div>
         </div>

@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 import FoundingMembers from "./pages/FoundingMembers";
 import InternshipApplication from "./pages/InternshipApplication";
 import EditingTraining from "./pages/EditingTraining";
+import EditingCurriculum from "./pages/EditingCurriculum";
+import EditingEnroll from "./pages/EditingEnroll";
 import PartnershipProgram from "./pages/PartnershipProgram";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/founders" element={<FoundingMembers />} />
           <Route path="/apply" element={<InternshipApplication />} />
           <Route path="/editing-training" element={<EditingTraining />} />
+          <Route path="/editing-curriculum" element={<EditingCurriculum />} />
+          <Route path="/editing-enroll" element={<EditingEnroll />} />
           <Route path="/partnership-program" element={<PartnershipProgram />} />
           <Route path="/ryze" element={<PartnershipProgram />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
