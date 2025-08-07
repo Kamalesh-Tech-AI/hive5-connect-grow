@@ -153,3 +153,28 @@
     transform: translateY(0);
   }
 }
+
+/* Logo optimization styles */
+.logo-container img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* Payment method styles */
+.payment-method-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .payment-method-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .payment-method-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
