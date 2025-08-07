@@ -13,8 +13,8 @@
     --foreground: 210 24% 16%;
 
     /* Purple Brand System */
-    --primary: 283 61% 51%;          /* HIVE5 Purple #6B46C1 */
-    --primary-light: 263 69% 66%;    /* Light Purple #8B5CF6 */
+    --primary: 217 91% 60%;          /* HIVE5 Blue #3B82F6 */
+    --primary-light: 213 93% 68%;    /* Light Blue #60A5FA */
     --primary-foreground: 0 0% 100%; /* White text on purple */
     
     /* Supporting Colors */
@@ -24,7 +24,7 @@
     --muted: 210 20% 96%;
     --muted-foreground: 215 16% 47%;
     
-    --accent: 283 61% 51%;
+    --accent: 217 91% 60%;
     --accent-foreground: 0 0% 100%;
     
     /* Interactive Elements */
@@ -36,19 +36,19 @@
     
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 283 61% 51%;
+    --ring: 217 91% 60%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Design System Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(283 61% 51%), hsl(263 69% 66%));
-    --gradient-hero: linear-gradient(135deg, hsl(283 61% 51% / 0.1), hsl(263 69% 66% / 0.05));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(213 93% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.1), hsl(213 93% 68% / 0.05));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
     
-    --shadow-elegant: 0 10px 30px -10px hsl(283 61% 51% / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.2);
     --shadow-card: 0 4px 20px -4px hsl(210 24% 16% / 0.08);
-    --shadow-glow: 0 0 40px hsl(283 61% 51% / 0.3);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -61,7 +61,7 @@
     --background: 210 24% 8%;
     --foreground: 0 0% 98%;
     
-    --primary: 263 69% 66%;
+    --primary: 213 93% 68%;
     --primary-foreground: 210 24% 8%;
     
     --card: 210 24% 10%;
@@ -75,10 +75,10 @@
     
     --border: 210 24% 20%;
     --input: 210 24% 20%;
-    --ring: 263 69% 66%;
+    --ring: 213 93% 68%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(263 69% 66%), hsl(283 61% 71%));
-    --gradient-hero: linear-gradient(135deg, hsl(263 69% 66% / 0.1), hsl(283 61% 71% / 0.05));
+    --gradient-primary: linear-gradient(135deg, hsl(213 93% 68%), hsl(217 91% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 93% 68% / 0.1), hsl(217 91% 65% / 0.05));
   }
 }
 
@@ -151,5 +151,30 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Logo optimization styles */
+.logo-container img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* Payment method styles */
+.payment-method-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .payment-method-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .payment-method-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

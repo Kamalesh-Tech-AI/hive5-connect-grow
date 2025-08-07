@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import logoImage from "@/assets/HIVE5 LOGO.jpeg";
 import { 
   ExternalLink, 
   Facebook, 
@@ -45,9 +46,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">H5</span>
-              </div>
+              <img 
+                src={logoImage} 
+                alt="HIVE5 Logo" 
+                className="h-10 w-auto object-contain"
+              />
               <span className="text-xl font-bold">HIVE5</span>
             </div>
             <p className="text-background/80 mb-6 leading-relaxed">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ExternalLink } from "lucide-react";
+import logoImage from "@/assets/HIVE5 LOGO.jpeg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">H5</span>
-            </div>
+            <img 
+              src={logoImage} 
+              alt="HIVE5 Logo" 
+              className="h-10 w-auto object-contain"
+            />
             <span className="text-xl font-bold gradient-text">HIVE5</span>
           </div>
 

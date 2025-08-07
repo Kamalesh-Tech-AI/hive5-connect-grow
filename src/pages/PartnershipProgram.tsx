@@ -40,7 +40,7 @@ const PartnershipProgram = () => {
       name: "Developers",
       status: "Featured",
       icon: Star,
-      color: "bg-purple-100 text-purple-700",
+      color: "bg-blue-100 text-blue-700",
       revenueShare: "75-80%",
       requirements: [
         "5+ projects/portfolios published AND sold",
@@ -147,12 +147,12 @@ const PartnershipProgram = () => {
               <Card 
                 key={tier.id} 
                 className={`card-elegant h-full relative ${
-                  tier.id === 3 ? 'ring-2 ring-purple-200 shadow-lg' : ''
+                  tier.id === 3 ? 'ring-2 ring-blue-200 shadow-lg' : ''
                 } ${tier.id === 5 ? 'ring-2 ring-primary/50 shadow-xl' : ''}`}
               >
                 {tier.id === 3 && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-purple-100 text-purple-700 px-4 py-1">
+                    <Badge className="bg-blue-100 text-blue-700 px-4 py-1">
                       ⭐ Popular
                     </Badge>
                   </div>

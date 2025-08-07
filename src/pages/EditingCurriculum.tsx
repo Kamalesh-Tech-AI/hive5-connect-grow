@@ -178,7 +178,7 @@ const EditingCurriculum = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+                        <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
                           <span className="font-bold">{week.week}</span>
                         </div>
                         <div>

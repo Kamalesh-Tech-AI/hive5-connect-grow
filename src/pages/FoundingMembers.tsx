@@ -3,63 +3,68 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Linkedin, Twitter, Github } from "lucide-react";
+import kamaleshImage from "@/assets/kamalesh-s.jpg";
+import rithikaImage from "@/assets/rithika-joshi-b.jpg";
+import akashImage from "@/assets/akash-kumar-o.jpg";
+import madhanImage from "@/assets/madhan-kumar-p.jpg";
+import mohammedImage from "@/assets/mohammed-tanveer-k.jpg";
 
 const FoundingMembers = () => {
   const founders = [
     {
       id: 1,
-      name: "Alex Rodriguez",
+      name: "KAMALESH S",
       role: "CEO & Co-Founder",
-      bio: "Former tech lead at Google with 10+ years experience in scaling startups. Passionate about innovation and building products that make a difference.",
+      bio: "Visionary leader with extensive experience in technology and business strategy. Passionate about innovation and building products that make a difference.",
       skills: ["Strategy", "Leadership", "Product Vision"],
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-      linkedin: "https://linkedin.com/in/alexrodriguez",
-      twitter: "https://twitter.com/alexrodriguez",
-      github: "https://github.com/alexrodriguez"
+      image: kamaleshImage,
+      linkedin: "https://linkedin.com/in/kamalesh-s",
+      twitter: "https://twitter.com/kamalesh_s",
+      github: "https://github.com/kamalesh-s"
     },
     {
       id: 2,
-      name: "Sarah Chen",
+      name: "RITHIKA JOSHI B",
       role: "CTO & Co-Founder",
-      bio: "Full-stack developer with expertise in AI and machine learning. Previously led engineering teams at Microsoft and several successful startups.",
+      bio: "Full-stack developer with expertise in AI and machine learning. Expert in building scalable systems and leading engineering teams.",
       skills: ["AI/ML", "Full-Stack Development", "System Architecture"],
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b796?w=300&h=300&fit=crop&crop=face",
-      linkedin: "https://linkedin.com/in/sarahchen",
-      twitter: "https://twitter.com/sarahchen",
-      github: "https://github.com/sarahchen"
+      image: rithikaImage,
+      linkedin: "https://linkedin.com/in/rithika-joshi-b",
+      twitter: "https://twitter.com/rithika_joshi",
+      github: "https://github.com/rithika-joshi-b"
     },
     {
       id: 3,
-      name: "Marcus Johnson",
+      name: "AKASH KUMAR O",
       role: "CPO & Co-Founder",
       bio: "Product strategist with a track record of launching successful consumer products. Expert in user experience design and market research.",
       skills: ["Product Strategy", "UX Design", "Market Research"],
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
-      linkedin: "https://linkedin.com/in/marcusjohnson",
-      twitter: "https://twitter.com/marcusjohnson",
-      github: "https://github.com/marcusjohnson"
+      image: akashImage,
+      linkedin: "https://linkedin.com/in/akash-kumar-o",
+      twitter: "https://twitter.com/akash_kumar",
+      github: "https://github.com/akash-kumar-o"
     },
     {
       id: 4,
-      name: "Emily Watson",
+      name: "MADHAN KUMAR P",
       role: "CMO & Co-Founder",
       bio: "Marketing expert with experience in both B2B and B2C markets. Specializes in digital marketing, brand building, and growth strategies.",
       skills: ["Digital Marketing", "Brand Strategy", "Growth Hacking"],
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
-      linkedin: "https://linkedin.com/in/emilywatson",
-      twitter: "https://twitter.com/emilywatson",
-      github: "https://github.com/emilywatson"
+      image: madhanImage,
+      linkedin: "https://linkedin.com/in/madhan-kumar-p",
+      twitter: "https://twitter.com/madhan_kumar",
+      github: "https://github.com/madhan-kumar-p"
     },
     {
       id: 5,
-      name: "David Kim",
+      name: "MOHAMMED TANVEER K",
       role: "CFO & Co-Founder",
-      bio: "Financial strategist with extensive experience in venture capital and startup finance. Former investment banker turned entrepreneur.",
+      bio: "Financial strategist with extensive experience in venture capital and startup finance. Expert in business development and financial planning.",
       skills: ["Financial Strategy", "Venture Capital", "Business Development"],
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face",
-      linkedin: "https://linkedin.com/in/davidkim",
-      twitter: "https://twitter.com/davidkim",
-      github: "https://github.com/davidkim"
+      image: mohammedImage,
+      linkedin: "https://linkedin.com/in/mohammed-tanveer-k",
+      twitter: "https://twitter.com/mohammed_tanveer",
+      github: "https://github.com/mohammed-tanveer-k"
     }
   ];
 
