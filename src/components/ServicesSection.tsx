@@ -101,6 +101,17 @@ const ServicesSection = () => {
                   variant={service.highlight ? "default" : "outline"}
                   className="w-full btn-hover-lift"
                   size="lg"
+                  onClick={() => {
+                    if (service.title === "Ryze Platform") {
+                      window.location.href = "/partnership-program";
+                    } else if (service.title === "Internship Program") {
+                      window.location.href = "/apply";
+                    } else if (service.title === "Editing Training") {
+                      window.location.href = "/editing-training";
+                    } else if (service.title === "Partnership Program") {
+                      window.location.href = "/partnership-program";
+                    }
+                  }}
                 >
                   {service.cta}
                   {service.ctaIcon && <service.ctaIcon className="ml-2 w-4 h-4" />}

@@ -8,7 +8,7 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/#about" },
-    { name: "Ryze Platform", href: "/#ryze" },
+    { name: "Ryze Platform", href: "/partnership-program" },
     { name: "Founding Team", href: "/founders" },
     { name: "Internships", href: "/#internships" },
     { name: "Apply Now", href: "/apply" },
