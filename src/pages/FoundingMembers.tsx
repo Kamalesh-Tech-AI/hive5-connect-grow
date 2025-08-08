@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Linkedin, Twitter, Github } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 import kamaleshImage from "@/assets/kamalesh-s.jpg";
 import rithikaImage from "@/assets/rithika-joshi-b.jpg";
 import akashImage from "@/assets/akash-kumar-o.jpg";
@@ -19,7 +19,7 @@ const FoundingMembers = () => {
       skills: ["Strategy", "Leadership", "Product Vision"],
       image: kamaleshImage,
       linkedin: "https://linkedin.com/in/kamalesh-s",
-      twitter: "https://twitter.com/kamalesh_s",
+      email: "kamalesh@hive5.tech",
       github: "https://github.com/kamalesh-s"
     },
     {
@@ -30,7 +30,7 @@ const FoundingMembers = () => {
       skills: ["AI/ML", "Full-Stack Development", "System Architecture"],
       image: rithikaImage,
       linkedin: "https://linkedin.com/in/rithika-joshi-b",
-      twitter: "https://twitter.com/rithika_joshi",
+      email: "rithika@hive5.tech",
       github: "https://github.com/rithika-joshi-b"
     },
     {
@@ -41,7 +41,7 @@ const FoundingMembers = () => {
       skills: ["Product Strategy", "UX Design", "Market Research"],
       image: akashImage,
       linkedin: "https://linkedin.com/in/akash-kumar-o",
-      twitter: "https://twitter.com/akash_kumar",
+      email: "akash@hive5.tech",
       github: "https://github.com/akash-kumar-o"
     },
     {
@@ -52,7 +52,7 @@ const FoundingMembers = () => {
       skills: ["Digital Marketing", "Brand Strategy", "Growth Hacking"],
       image: madhanImage,
       linkedin: "https://linkedin.com/in/madhan-kumar-p",
-      twitter: "https://twitter.com/madhan_kumar",
+      email: "madhan@hive5.tech",
       github: "https://github.com/madhan-kumar-p"
     },
     {
@@ -63,7 +63,7 @@ const FoundingMembers = () => {
       skills: ["Financial Strategy", "Venture Capital", "Business Development"],
       image: mohammedImage,
       linkedin: "https://linkedin.com/in/mohammed-tanveer-k",
-      twitter: "https://twitter.com/mohammed_tanveer",
+      email: "mohammed@hive5.tech",
       github: "https://github.com/mohammed-tanveer-k"
     }
   ];
@@ -134,12 +134,10 @@ const FoundingMembers = () => {
                       <Linkedin className="w-5 h-5" />
                     </a>
                     <a 
-                      href={founder.twitter} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                      href={`mailto:${founder.email}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <Twitter className="w-5 h-5" />
+                      <Mail className="w-5 h-5" />
                     </a>
                     <a 
                       href={founder.github} 
