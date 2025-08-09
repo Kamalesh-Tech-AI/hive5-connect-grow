@@ -122,9 +122,7 @@ const PartnershipProgram = () => {
               <Button size="lg" className="btn-hover-lift">
                 Start Your Journey <ExternalLink className="ml-2 w-4 h-4" />
               </Button>
-              <Button variant="outline" size="lg" className="btn-hover-lift">
-                Learn More
-              </Button>
+            
             </div>
           </div>
         </div>
