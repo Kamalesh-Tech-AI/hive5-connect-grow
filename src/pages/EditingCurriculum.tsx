@@ -152,7 +152,7 @@ const EditingCurriculum = () => {
             
             <Button size="lg" className="btn-hover-lift" asChild>
               <Link to="/editing-enroll">
-                Enroll Now - $299
+                Enroll Now - Rs. 2000
               </Link>
             </Button>
           </div>
@@ -239,7 +239,7 @@ const EditingCurriculum = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="btn-hover-lift" asChild>
                 <Link to="/editing-enroll">
-                  Enroll Today - $299
+                  Enroll Today - Rs. 2000
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="btn-hover-lift" asChild>
