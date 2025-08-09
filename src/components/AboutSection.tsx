@@ -63,16 +63,7 @@ const AboutSection = () => {
                   United by a shared passion for technology and innovation, our five founders 
                   bring diverse expertise and perspectives to every project.
                 </p>
-                <div className="grid grid-cols-5 gap-2">
-                  {[1, 2, 3, 4, 5].map((member) => (
-                    <div 
-                      key={member} 
-                      className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center text-primary-foreground font-bold"
-                    >
-                      {member}
-                    </div>
-                  ))}
-                </div>
+                
               </div>
             </div>
           </div>
