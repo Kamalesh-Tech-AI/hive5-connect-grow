@@ -60,15 +60,15 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-background/80">hello@hive5.tech</span>
+                <span className="text-background/80">hive5.startup@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-background/80">+1 (555) 123-4567</span>
+                <span className="text-background/80">+91 93420 97741</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-background/80">Silicon Valley, CA</span>
+                <span className="text-background/80">GSBT, CH-52</span>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ const Footer = () => {
         {/* Special Message */}
         <div className="text-center mt-8 pt-8 border-t border-background/20">
           <p className="text-background/60 text-sm italic">
-            "Skills development, not job placement" - Our commitment to genuine learning
+            "Skills development" - Our commitment to genuine learning
           </p>
         </div>
       </div>
