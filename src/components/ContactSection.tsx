@@ -35,19 +35,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email Us",
-      content: "hello@hive5.tech",
+      content: "hive5.startup@gmail.com",
       description: "General inquiries and support"
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
+      content: "+91 93420 97741",
       description: "Business hours: 9AM - 6PM EST"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "Tech Innovation Hub, Silicon Valley",
+      content: "Research & Development, GSBT ",
       description: "Our main headquarters"
     },
     {
@@ -61,7 +61,7 @@ const ContactSection = () => {
   const socialLinks = [
     { icon: Facebook, name: "Facebook", href: "#" },
     { icon: Twitter, name: "Twitter", href: "#" },
-    { icon: Linkedin, name: "LinkedIn", href: "#" },
+    { icon: Linkedin, name: "LinkedIn", href: "https://www.linkedin.com/in/hive5/" },
     { icon: Instagram, name: "Instagram", href: "#" }
   ];
 
