@@ -66,7 +66,7 @@ const InternshipSection = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-6 py-2 mb-6">
             <GraduationCap className="w-5 h-5 text-primary" />
-            <span className="text-primary font-medium">Skills Development, Not Job Placement</span>
+            <span className="text-primary font-medium">Skills Development</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
