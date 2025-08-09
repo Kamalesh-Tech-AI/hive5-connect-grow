@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { Linkedin, Mail, Github } from "lucide-react";
 import kamaleshImage from "@/assets/kamalesh-s.jpg";
 import rithikaImage from "@/assets/rithika-joshi-b.jpg";
-import akashImage from "@/assets/akash-kumar-o.jpg";
-import madhanImage from "@/assets/madhan-kumar-p.jpg";
-import mohammedImage from "@/assets/mohammed-tanveer-k.jpg";
+import akashImage from "@/assets/akash-kumar-o.jpeg";
+import madhanImage from "@/assets/madhan-kumar-p.jpeg";
+import mohammedImage from "@/assets/mohammed-tanveer-k.jpeg";
 
 const FoundingMembers = () => {
   const founders = [
