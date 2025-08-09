@@ -23,11 +23,7 @@ const HeroSection = () => {
             />
           </div>
 
-          {/* Founded by 5 Badge */}
-          <div className="inline-flex items-center space-x-2 bg-secondary/80 backdrop-blur-sm rounded-full px-6 py-2 mb-8 fade-in-up">
-            <Users className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">Founded by 5 Tech Professionals</span>
-          </div>
+
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in-up stagger-1">
