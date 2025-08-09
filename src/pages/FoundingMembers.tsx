@@ -134,11 +134,14 @@ const FoundingMembers = () => {
                       <Linkedin className="w-5 h-5" />
                     </a>
                     <a 
-                      href={`mailto:${founder.email}`}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Mail className="w-5 h-5" />
-                    </a>
+  href={`https://mail.google.com/mail/?view=cm&to=${founder.email}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-muted-foreground hover:text-primary transition-colors"
+>
+  <Mail className="w-5 h-5" />
+</a>
+
                   
                   </div>
                 </CardContent>
