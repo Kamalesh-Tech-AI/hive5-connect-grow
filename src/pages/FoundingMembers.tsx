@@ -19,8 +19,8 @@ const FoundingMembers = () => {
       skills: ["Strategy", "Leadership", "Product Vision"],
       image: kamaleshImage,
       linkedin: "https://linkedin.com/in/kamalesh-s",
-      email: "kamalesh@hive5.tech",
-      github: "https://github.com/kamalesh-s"
+      email: "kamalesh3703s@gmail.com",
+      github: "https://github.com/Kamalesh-Tech-AI"
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ const FoundingMembers = () => {
       bio: "Product strategist with a track record of launching successful consumer products. Expert in user experience design and market research.",
       skills: ["Product Strategy", "UX Design", "Market Research"],
       image: akashImage,
-      linkedin: "https://linkedin.com/in/akash-kumar-o",
+      linkedin: "https://www.linkedin.com/in/akash-kumar-singh-o-7746242b5/",
       email: "akash@hive5.tech",
       github: "https://github.com/akash-kumar-o"
     },
@@ -51,7 +51,7 @@ const FoundingMembers = () => {
       bio: "Marketing expert with experience in both B2B and B2C markets. Specializes in digital marketing, brand building, and growth strategies.",
       skills: ["Digital Marketing", "Brand Strategy", "Growth Hacking"],
       image: madhanImage,
-      linkedin: "https://linkedin.com/in/madhan-kumar-p",
+      linkedin: "https://www.linkedin.com/in/madhan-kumar-p-759402324/",
       email: "madhan@hive5.tech",
       github: "https://github.com/madhan-kumar-p"
     },
@@ -62,9 +62,9 @@ const FoundingMembers = () => {
       bio: "Financial strategist with extensive experience in venture capital and startup finance. Expert in business development and financial planning.",
       skills: ["Financial Strategy", "Venture Capital", "Business Development"],
       image: mohammedImage,
-      linkedin: "https://linkedin.com/in/mohammed-tanveer-k",
+      linkedin: "https://www.linkedin.com/in/mohammed-tanveer-kareemullah-33b91a2ab/",
       email: "mohammed@hive5.tech",
-      github: "https://github.com/mohammed-tanveer-k"
+     
     }
   ];
 
@@ -139,14 +139,7 @@ const FoundingMembers = () => {
                     >
                       <Mail className="w-5 h-5" />
                     </a>
-                    <a 
-                      href={founder.github} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
+                  
                   </div>
                 </CardContent>
               </Card>
