@@ -11,59 +11,61 @@ import mohammedImage from "@/assets/mohammed-tanveer-k.jpeg";
 
 const FoundingMembers = () => {
   const founders = [
+
+        {
+      id: 3,
+      name: "AKASH KUMAR O",
+      role: "CEO",
+      bio: "Strategic leader with a proven ability to drive growth, build partnerships, and guide organizations toward long‑term success..",
+      skills: ["Business Strategy", "Leadership", "Partnership Development", "Organizational Growth"],
+      image: akashImage,
+      linkedin: "https://www.linkedin.com/in/akash-kumar-singh-o-7746242b5/",
+      email: "akash.hive.5@gmail.com",
+      github: "https://github.com/akash-kumar-o"
+    },
     {
       id: 1,
       name: "KAMALESH S",
-      role: "CEO & Co-Founder",
+      role: "CTO",
       bio: "Visionary leader with extensive experience in technology and business strategy. Passionate about innovation and building products that make a difference.",
-      skills: ["Strategy", "Leadership", "Product Vision"],
+      skills: ["Technology Strategy", "Product Development", "System Architecture", "Innovation Management"],
       image: kamaleshImage,
       linkedin: "https://linkedin.com/in/kamalesh-s",
-      email: "kamalesh3703s@gmail.com",
+      email: "kamalesh.hive5@gmail.com",
       github: "https://github.com/Kamalesh-Tech-AI"
     },
     {
       id: 2,
       name: "RITHIKA JOSHI B",
-      role: "CTO & Co-Founder",
-      bio: "Full-stack developer with expertise in AI and machine learning. Expert in building scalable systems and leading engineering teams.",
-      skills: ["AI/ML", "Full-Stack Development", "System Architecture"],
+      role: "Manager",
+      bio: "Operations leader skilled in optimizing workflows, managing teams, and delivering projects efficiently and on time.",
+      skills: ["AI/ML", "Full-Stack Development", "Team Leadership", "Process Optimization", "Project Coordination"],
       image: rithikaImage,
-      linkedin: "https://linkedin.com/in/rithika-joshi-b",
-      email: "rithika@hive5.tech",
-      github: "https://github.com/rithika-joshi-b"
+      linkedin: "https://www.linkedin.com/in/rithika-joshi-b-b24612328/",
+      email: "rithikajoshi.hive5@gmail.com",
+      github: "https://github.com/rithikajoshi0-0"
     },
-    {
-      id: 3,
-      name: "AKASH KUMAR O",
-      role: "CPO & Co-Founder",
-      bio: "Product strategist with a track record of launching successful consumer products. Expert in user experience design and market research.",
-      skills: ["Product Strategy", "UX Design", "Market Research"],
-      image: akashImage,
-      linkedin: "https://www.linkedin.com/in/akash-kumar-singh-o-7746242b5/",
-      email: "akash@hive5.tech",
-      github: "https://github.com/akash-kumar-o"
-    },
+
     {
       id: 4,
       name: "MADHAN KUMAR P",
-      role: "CMO & Co-Founder",
-      bio: "Marketing expert with experience in both B2B and B2C markets. Specializes in digital marketing, brand building, and growth strategies.",
-      skills: ["Digital Marketing", "Brand Strategy", "Growth Hacking"],
+      role: "CFO",
+      bio: "Financial strategist with expertise in fiscal planning, risk management, and ensuring sustainable business performance.",
+      skills: ["Financial Planning", "Risk Management", "Budgeting", "Data‑Driven Decision Making"],
       image: madhanImage,
       linkedin: "https://www.linkedin.com/in/madhan-kumar-p-759402324/",
-      email: "madhan@hive5.tech",
+      email: "madhankumar.hive5@gmai.com",
       github: "https://github.com/madhan-kumar-p"
     },
     {
       id: 5,
       name: "MOHAMMED TANVEER K",
-      role: "CFO & Co-Founder",
-      bio: "Financial strategist with extensive experience in venture capital and startup finance. Expert in business development and financial planning.",
-      skills: ["Financial Strategy", "Venture Capital", "Business Development"],
+      role: "Creative Director",
+      bio: "Creative visionary with expertise in brand storytelling, visual design, and developing engaging, audience‑driven campaigns.",
+      skills: ["Brand Strategy", "Creative Direction", "Visual Design", "Content Development"],
       image: mohammedImage,
       linkedin: "https://www.linkedin.com/in/mohammed-tanveer-kareemullah-33b91a2ab/",
-      email: "mohammed@hive5.tech",
+      email: "tanveerhigh5@gmail.com",
      
     }
   ];
