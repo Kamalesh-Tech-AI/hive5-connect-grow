@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Linkedin, Mail, Github } from "lucide-react";
-import kamaleshImage from "@/assets/kamalesh-s.jpg";
+import kamaleshImage from "@/assets/kamalesh-s.jpeg";
 import rithikaImage from "@/assets/rithika-joshi-b.jpeg";
 import akashImage from "@/assets/akash-kumar-o.jpeg";
 import madhanImage from "@/assets/madhan-kumar-p.jpeg";
@@ -98,7 +98,9 @@ const FoundingMembers = () => {
                     <img
                       src={founder.image}
                       alt={founder.name}
-                      className="w-24 h-24 rounded-full mx-auto object-cover ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300"
+                      className="w-24 h-24 rounded-full mx-auto object-cover ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300 select-none pointer-events-none"
+                      draggable={false}
+                      onContextMenu={(e) => e.preventDefault()}
                     />
                   </div>
 
