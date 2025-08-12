@@ -337,10 +337,9 @@ const InternshipApplication = () => {
                             <SelectValue placeholder="Select your year" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="freshman">Freshman</SelectItem>
-                            <SelectItem value="sophomore">Sophomore</SelectItem>
-                            <SelectItem value="junior">Junior</SelectItem>
-                            <SelectItem value="senior">Senior</SelectItem>
+                          <SelectItem value="2 - Year Student">2 - Year Student</SelectItem>
+                            <SelectItem value="3 - Year Student">3 - Year Student</SelectItem>
+                            <SelectItem value="4 - Year Student">4 - Year Student</SelectItem>
                             <SelectItem value="graduate">Graduate Student</SelectItem>
                             <SelectItem value="recent_graduate">Recent Graduate</SelectItem>
                           </SelectContent>
