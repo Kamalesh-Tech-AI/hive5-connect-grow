@@ -150,7 +150,7 @@ const InternshipApplication = () => {
           preferred_schedule: editingFormData.preferredSchedule,
           payment_method: editingFormData.paymentMethod,
           contact_preference: editingFormData.contactPreference,
-          amount: 299.00,
+          amount: 2000.00,
           status: 'pending'
         });
 
@@ -643,7 +643,7 @@ const InternshipApplication = () => {
                       </div>
                       <div className="flex justify-between">
                         <span>Program Fee:</span>
-                        <span className="font-bold text-lg text-primary">$299</span>
+                        <span className="font-bold text-lg text-primary">$2000</span>
                       </div>
                       <div className="pt-4 border-t">
                         <div className="flex items-center space-x-2 text-sm text-muted-foreground">
